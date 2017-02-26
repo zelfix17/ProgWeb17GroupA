@@ -1,0 +1,52 @@
+
+/*Universal Selector*/
+* { color: green; text-align: justify; }
+
+/*Elemen Selector*/
+h4 { color: magenta;text-align: center;font-family: Courier New, Courier, monospace; }
+p { color: blue; text-align: left; }
+h1,h2,h3 {color: white; background-color: darkred;}
+p strong { color: coral; font-weight: bold; }
+p > strong { color: yellow; font-weight: bold; 
+             font-family: 'Times New Roman', Times, serif; }
+p + strong { color: lawngreen; 
+             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+
+/*Class Selector*/
+.styleKu { color: chocolate; background-color: azure; 
+           font-weight: bolder; }
+p.styleKu { color: blueviolet; background-color: ghostwhite;  }
+div.merah { color: crimson; background-color: aliceblue; 
+            border: 2px solid lime; width: 50%; 
+            padding: 15px 20px 15px 20px; }
+
+/*ID Selector*/
+#myStyle { color: deeppink; background-color: aliceblue; }
+
+div { color: tomato; background-color: aliceblue; 
+      border: 2px dotted darkviolet; width: 50%; 
+      padding: 15px 20px 15px 20px; margin: 15px 20px 15px 20px; } 
+
+div.menu { width: 30%;  }
+
+div.relative {
+    position: relative;
+    left: 100px;
+    border: 3px solid #73AD21;
+}
+
+div.fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    border: 3px solid #73AD21;
+}
+
+div.absolute {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 200px;
+    border: 3px solid #73AD21;
+}

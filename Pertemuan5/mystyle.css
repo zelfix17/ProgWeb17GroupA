@@ -1,0 +1,25 @@
+#header {
+    border: 3px solid darkorange;
+    width: 810px;
+    height: 100px;
+}
+
+#leftmenu {
+    position: absolute;
+    top: 120px;
+    width: 180px;
+    height: 500px;
+    border: 3px solid mediumseagreen;
+}
+
+#content {
+    position: absolute;
+    border: 3px solid blueviolet;
+    top: 120px;
+    left: 200px;
+    height: 500px;
+    width: 620px;
+}
+
+p{text-align: center; font-size: large;}
+
