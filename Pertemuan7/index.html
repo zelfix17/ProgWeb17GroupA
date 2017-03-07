@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My Homepage</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        .list-group-horizontal .list-group-item {
+            display: inline-block;
+        }
+        
+        .list-group-horizontal .list-group-item {
+            margin-bottom: 0;
+            margin-left: -4px;
+            margin-right: 0;
+        }
+        
+        .list-group-horizontal .list-group-item:first-child {
+            border-top-right-radius: 0;
+            border-bottom-left-radius: 4px;
+        }
+        
+        .list-group-horizontal .list-group-item:last-child {
+            border-top-right-radius: 4px;
+            border-bottom-left-radius: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row" style="padding-top:50px">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
+                <div class="list-group list-group-horizontal">
+                    <a href="about.html" class="list-group-item active">About Us</a>
+                    <a href="#" class="list-group-item">Item Two</a>
+                    <a href="#" class="list-group-item">Item Three</a>
+                    <a href="#" class="list-group-item">Item Four</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <h3 class="text-center">Form Registration</h3>
+            <form>
+                <div class="form-group">
+                    <label for="firstname">First Name :</label>
+                    <input type="text" class="form-control" name="firstname" placeholder="insert first name">
+                </div>
+                <div class="form-group">
+                    <label for="lastname">Last Name :</label>
+                    <input type="text" class="form-control" name="lastname" placeholder="insert last name">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password :</label>
+                    <input type="password" class="form-control" name="password" placeholder="insert password here">
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender :</label>
+                    <div class="form-control">
+                        <input type="radio" name="gender" value="Male">Male &nbsp;
+                        <input type="radio" name="gender" value="Female">Female
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="city">City</label>
+                    <select name="city" class="form-control">
+                        <option value="Yogyakarta">Yogyakarta</option>
+                        <option value="Jakarta">Jakarta</option>
+                        <option value="Surabaya">Surabaya</option>
+                        <option value="Bandung">Bandung</option>
+                    </select>
+                </div>
+                <button type="button" class="btn btn-primary">Submit</button>
+                <button type="button" class="btn btn-primary">Reset</button>
+            </form>
+        </div>
+        <div class="col-md-8">
+            <h3 class="text-center">Form Horizontal</h3>
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="firstname" class="col-md-3 text-right">First Name :</label>
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" name="firstname" placeholder="enter first name">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="lastname" class="col-md-3 text-right">Last Name :</label>
+                    <div class="col-md-9">
+                        <input type="text" class="form-control" name="lastname" placeholder="enter last name">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <h3 class="text-center">Inline Form</h3>
+        <form class="form-inline">
+            <div class="form-group">
+                <label for="username">Username :</label>
+                <input type="text" class="form-control" placeholder="insert username">
+            </div>
+            <div class="form-group">
+                <label for="password">Password :</label>
+                <input type="password" class="form-control" placeholder="insert password">
+            </div>
+            <button type="button" class="btn btn-info">Login</button>
+        </form>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>
