@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Simple Math</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <fieldset>
+        <legend>Math Form</legend>
+        <label for="txtBil1">Masukan Bil 1:</label><br/>
+        <input type="text" id="txtBil1" placeholder="masukan bil 1"><br><br>
+
+        <label for="txtBil2">Masukan Bil 2:</label><br>
+        <input type="text" id="txtBil2" placeholder="Masukan bil 2"><br><br>
+
+        <button type="button" id="btnHitung" onclick="HitungTambah()">Hitung</button>
+        <button type="button" id="btnGetData" onclick="TampilData()">Get Data</button>
+        <button type="button" onclick="ContohArray()">Contoh Array</button>
+        <button type="button" onclick="SampleComparison()">Comparison</button>
+    </fieldset>
+
+    <script>
+        function HitungTambah() {
+            var bil1 = parseFloat(document.getElementById("txtBil1").value);
+            var bil2 = parseFloat(document.getElementById("txtBil2").value);
+
+            var hasil = bil1 + bil2;
+            alert("Hasilnya adalah : " + hasil);
+        }
+
+        function TampilData(){
+            var mhs1 = {"nim":"72089876","nama":"Budi Halim","ipk":3.5};
+            alert("Nim: "+mhs1.nim+" - Nama: "+mhs1.nama);
+        }
+
+        function ContohArray(){
+            var arrNama = ["erick","budi","bambang","amir","ani"];
+            //var nama = arrNama[0];
+            var results = "";
+            for(i=0;i<arrNama.length;i++)
+            {
+                results += arrNama[i] + "\n";
+            }
+            //alert(results);
+
+            var arrMhs = [
+                {"nim":"72089876","nama":"Budi Halim","ipk":3.5},
+                {"nim":"72089877","nama":"Argo","ipk":3.2},
+                {"nim":"72089878","nama":"Bambang","ipk":3.5},
+                {"nim":"72089879","nama":"Joel","ipk":3.8}
+            ];
+
+            var hasil = "";
+            for(x in arrMhs)
+            {
+                hasil = "Nim : " + arrMhs[x].nim + " Nama : " + arrMhs[x].nama;
+            }
+            alert(hasil);
+        }
+
+        function SampleComparison()
+        {
+            var bil1 = "12"; //string
+            var bil2 = 12; //number
+
+            /*var hasil = "";
+            if(bil1==bil2)
+                hasil = "sama";
+            else
+                hasil = "tidak sama";*/
+
+            var x = undefined;
+            var y = null;
+
+            if(x==y)
+                hasil = "sama";
+            else
+                hasil = "tidak sama";
+
+            alert(hasil);
+        }
+    </script>
+</body>
+
+</html>

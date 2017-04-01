@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <p id="par1"></p>
+        <button type="button" id="btnHello">Hello</button>
+    
+    <script src="js/jquery-3.2.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btnHello").click(function(){
+                $("#par1").html("<strong>Hello Javascript !!</strong>")
+                .css({"color":"green","font-size":"20pt"});
+            });
+        });
+    </script>
+    </body>
+</html>
